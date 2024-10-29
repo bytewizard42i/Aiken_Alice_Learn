@@ -1,0 +1,18 @@
+name = "zklabs/alice_aiken_tutorial"
+version = "0.0.0"
+compiler = "v1.1.5"
+plutus = "v3"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'zklabs/alice_aiken_tutorial'"
+
+[repository]
+user = "zklabs"
+project = "alice_aiken_tutorial"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "v2.0.0"
+source = "github"
+
+[config]
