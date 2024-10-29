@@ -1,0 +1,46 @@
+{
+  "preamble": {
+    "title": "zklabs/alice_aiken_tutorial",
+    "description": "Aiken contracts for project 'zklabs/alice_aiken_tutorial'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.5+a7741ec"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "basic_validator.simple_check.spend",
+      "datum": {
+        "title": "_d",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "5857010100323232323225333002323232323253330073370e900118041baa00113232324a26018601a004601600260126ea800458c024c028008c020004c020008c018004c010dd50008a4c26cacae6955ceaab9e5742ae89",
+      "hash": "3f919a6912708379420f321462ffd069b9ca06dabd8748c0015dc5df"
+    },
+    {
+      "title": "basic_validator.simple_check.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "5857010100323232323225333002323232323253330073370e900118041baa00113232324a26018601a004601600260126ea800458c024c028008c020004c020008c018004c010dd50008a4c26cacae6955ceaab9e5742ae89",
+      "hash": "3f919a6912708379420f321462ffd069b9ca06dabd8748c0015dc5df"
+    }
+  ],
+  "definitions": {
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    }
+  }
+}
