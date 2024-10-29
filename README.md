@@ -1,0 +1,1 @@
+This is my Ai Alice gpt-4o guided build of aiken smart contract validator. I have uploaded all the aiken docs to her memory in an attempt to see if whe can teach me the missing gaps in code syntax that I need to catch up in my Aiken Emurgo Course. 
