@@ -1,4 +1,6 @@
-// Import the Transaction type from the standard Cardano library
+use aiken/crypto.{VerificationKeyHash}
+use aiken/primitive/string
+// Import necessary types from Cardano libraries
 use cardano/transaction.{Transaction}
 
 // Define the validator function
