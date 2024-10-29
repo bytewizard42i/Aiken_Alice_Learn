@@ -3,15 +3,12 @@ use aiken/primitive/string
 // Import necessary types from Cardano libraries
 use cardano/transaction.{Transaction}
 
-// Define the validator function
-validator simple_check {
-  // The function takes four parameters: datum (_d), redeemer (_r), output (_o), and transaction context (tx)
-  spend(_d: Option<Data>, _r: Data, _o: Data, _tx: Transaction) {
-    True
-    // Just a placeholder returning `True`
-  }
+// Define Datum type, containing the owner's public key hash
+pub type Datum {
+  owner: VerificationKeyHash,
+}
 
-  else(_) {
-    fail
-  }
+// Define Redeemer type, containing a message
+pub type Redeemer {
+  msg: ByteArray,
 }
