@@ -12,3 +12,21 @@ pub type Datum {
 pub type Redeemer {
   msg: ByteArray,
 }
+
+// Validator function that checks if the redeemer message is "Hello, Aiken!"
+validator simple_check {
+  spend(datum: Option<Datum>, redeemer: Redeemer, _o: Data, tx: Transaction) {
+    // Ensure datum is provided and matches expected structure
+    expect Some(Datum { owner }) = datum
+
+    // Check that the redeemer message matches "Hello, Aiken!"
+    let valid_message = redeemer.msg == "Hello, Aiken!"
+
+    // Return true if the message matches
+    valid_message
+  }
+
+  else(_) {
+    fail
+  }
+}
